@@ -1,4 +1,4 @@
-class BNFSpeedSensor{
+class BNFSpeedSensor: public ISpeedMonitor{
         public:
             int   getCurrentSpeed(){
                 std::random_device rd;
