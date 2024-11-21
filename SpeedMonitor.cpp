@@ -5,12 +5,7 @@
 
 using namespace std;
 
-class SpeedMonitor{
-    private : int _speedThreshold;
-  
-      public:
-          SpeedMonitor(int speedThreshold): _speedThreshold{speedThreshold} {}
-          void monitor(){
+          void SpeedMonitor::monitor(){
             if(_speedThreshold  < 1 || _speedThreshold > 100){
               cout<<"_speedThreshold value must be in the ramge {1-100} "<<_speedThreshold<<endl;
             }
@@ -32,4 +27,3 @@ class SpeedMonitor{
             }
               
           }
-};
