@@ -1,6 +1,8 @@
 #include <iostream>
 #include <random> 
 #include <string>
+#include "SpeedMonitor.h"
+
 using namespace std;
 
 class SpeedMonitor{
