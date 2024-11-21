@@ -2,6 +2,7 @@
 #include <random> 
 #include <string>
 #include "ILogger.h"
+#include "ISpeedMonitor.h"
 
 using namespace std;
 
@@ -10,7 +11,8 @@ class SpeedMonitor{
         int _speedThreshold;
         //Dependency
         ILogger * _logger;
+        ISpeedSensor *_speedSensor;
       public:
-          SpeedMonitor(int speedThreshold, ILogger *logger): _speedThreshold{speedThreshold}, _logger{logger} {}
+          SpeedMonitor(int speedThreshold, ILogger *logger, ISpeedSensor *speedSensor): _speedThreshold{speedThreshold}, _logger{logger},  _speedSensor{speedSensor}{}
           void monitor();
 };
